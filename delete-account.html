@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Delete your account — Distora</title>
+<meta name="description" content="How to permanently delete your Distora account and what data is deleted.">
+<style>
+  :root{
+    --bg:#0B0A12; --surface:#16141F; --surface2:#1E1B2B; --line:#2A2738;
+    --ink:#FFFFFF; --ink-soft:#A9A3C2; --ink-faint:#6E6885;
+    --pink:#FF4F7B; --violet:#5B4BDB; --gold:#F2A30F; --danger:#FF6B8B;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--ink)}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Inter,Arial,sans-serif;
+    line-height:1.6; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:720px;margin:0 auto;padding:56px 24px 96px}
+  .brand{display:flex;align-items:center;gap:10px;margin-bottom:40px}
+  .brand .dot{width:28px;height:28px;border-radius:9px;background:linear-gradient(160deg,#FF7A9C,#FF4F7B 60%,#D93A5F)}
+  .brand span{font-weight:800;font-size:18px;letter-spacing:-.3px}
+  h1{font-size:32px;font-weight:800;letter-spacing:-.6px;margin:0 0 6px}
+  .sub{color:var(--ink-soft);font-size:16px;margin:0 0 40px}
+  h2{font-size:19px;font-weight:700;letter-spacing:-.2px;margin:40px 0 16px}
+  p{color:var(--ink-soft);margin:0 0 14px;font-size:15.5px}
+  b{color:var(--ink);font-weight:600}
+  a{color:var(--pink);text-decoration:none}
+  a:hover{text-decoration:underline}
+
+  .steps{list-style:none;margin:0 0 8px;padding:0;counter-reset:step}
+  .steps li{
+    counter-increment:step; position:relative; padding:18px 20px 18px 60px;
+    background:var(--surface); border:1px solid var(--line); border-radius:16px; margin-bottom:12px;
+  }
+  .steps li::before{
+    content:counter(step); position:absolute; left:18px; top:18px;
+    width:28px;height:28px;border-radius:9px;background:var(--pink);color:#fff;
+    font-weight:800;font-size:14px;display:flex;align-items:center;justify-content:center;
+  }
+  .steps b{display:block;font-size:15.5px;margin-bottom:3px}
+  .steps span{color:var(--ink-soft);font-size:14.5px}
+
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:8px 0 16px}
+  @media (max-width:600px){.grid{grid-template-columns:1fr}}
+  .box{border-radius:16px;padding:18px 20px;border:1px solid var(--line)}
+  .box.keep{background:rgba(242,163,15,.07);border-color:rgba(242,163,15,.35)}
+  .box.gone{background:rgba(255,107,139,.07);border-color:rgba(255,107,139,.35)}
+  .box h3{margin:0 0 10px;font-size:14px;font-weight:700;letter-spacing:.2px}
+  .box.gone h3{color:var(--danger)}
+  .box.keep h3{color:var(--gold)}
+  .box ul{margin:0;padding-left:18px;color:var(--ink-soft);font-size:14.5px}
+  .box li{margin-bottom:6px}
+
+  .btn{
+    display:inline-flex;align-items:center;gap:8px;background:linear-gradient(180deg,#FF7A9C,#FF4F7B 55%,#E13D68);
+    color:#fff;font-weight:800;font-size:15px;padding:14px 22px;border-radius:14px;
+    box-shadow:0 6px 16px rgba(255,79,123,.35); margin:6px 0 30px;
+  }
+  .btn:hover{text-decoration:none;filter:brightness(1.05)}
+
+  .note{background:var(--surface2);border:1px solid var(--line);border-radius:12px;padding:14px 16px;font-size:14px;color:var(--ink-soft);margin:0 0 14px}
+  footer{margin-top:56px;padding-top:24px;border-top:1px solid var(--line);color:var(--ink-faint);font-size:13.5px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="brand"><div class="dot"></div><span>Distora</span></div>
+
+  <h1>Delete your account</h1>
+  <p class="sub">You can permanently delete your Distora account and personal data at any time, directly in the app.</p>
+
+  <h2>How to delete your account</h2>
+  <ol class="steps">
+    <li><b>Open Distora</b> <span>and make sure you're signed in.</span></li>
+    <li><b>Go to Profile</b> <span>— tap your avatar or the profile icon from the Home screen.</span></li>
+    <li><b>Scroll to "Delete Account"</b> <span>near the bottom of the Profile screen, under Account.</span></li>
+    <li><b>Confirm</b> <span>when asked "Delete your account? This permanently deletes your account and personal data. This can't be undone."</span></li>
+  </ol>
+  <p>That's it — deletion happens immediately, in the app, with no waiting period and no need to contact support.</p>
+
+  <div class="note">
+    Can't open the app (lost your phone, account is stuck signing in, etc.)? Email
+    <a href="mailto:[SUPPORT EMAIL]">[SUPPORT EMAIL]</a> from the address or account you signed up with and we'll
+    delete it for you within <b>[X] business days</b>.
+  </div>
+
+  <h2>What gets deleted, and what doesn't</h2>
+  <div class="grid">
+    <div class="box gone">
+      <h3>DELETED IMMEDIATELY</h3>
+      <ul>
+        <li>Your sign‑in account (email/password or Google) — you can no longer sign in as you</li>
+        <li>Your display name and personal profile data</li>
+        <li>Your location data and distance‑sharing setting</li>
+        <li>Your push‑notification token</li>
+        <li>Your device status (battery/network) previously shown to your partner</li>
+      </ul>
+    </div>
+    <div class="box keep">
+      <h3>KEPT (on your partner's side)</h3>
+      <ul>
+        <li>Doodles, to‑do items, countdowns and affection you sent while paired — the same way a message stays in
+          someone else's inbox after you delete your own account</li>
+        <li>Your Distora Pro subscription itself is managed by Apple/Google and isn't cancelled by deleting your
+          Distora account — cancel it separately in the App Store/Play Store if you don't want it to renew</li>
+      </ul>
+    </div>
+  </div>
+  <p>
+    We keep shared content on your partner's side because it's part of a shared experience the two of you built
+    together, and deleting your account shouldn't reach into their account and erase their history. If you'd
+    like that shared content removed too, ask your partner to delete the relevant item (doodle, task, countdown)
+    from their side, or contact us at <a href="mailto:[SUPPORT EMAIL]">[SUPPORT EMAIL]</a>.
+  </p>
+
+  <h2>Not sure you want to delete everything?</h2>
+  <p>
+    If you just want to stop using Distora for now without losing your account, use <b>Sign Out</b> instead of
+    Delete Account — your data stays exactly as it is, and you can sign back in any time.
+  </p>
+
+  <p style="margin-top:36px">For more detail on what we collect and why, see our <a href="privacy.html">Privacy Policy</a>.</p>
+
+  <footer>© <span id="y"></span> Distora. · <a href="privacy.html">Privacy</a> · <a href="delete-account.html">Delete account</a> · <a href="terms.html">Terms</a></footer>
+</div>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
